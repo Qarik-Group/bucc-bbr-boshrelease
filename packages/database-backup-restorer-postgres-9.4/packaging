@@ -1,0 +1,4 @@
+set -e
+
+pushd ${BOSH_INSTALL_TARGET} > /dev/null
+ln -s /var/vcap/packages/database-backup-restorer-postgres-9.6/bin bin
