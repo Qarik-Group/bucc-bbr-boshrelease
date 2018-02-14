@@ -1,4 +1,0 @@
-name: database-backup-restorer
-fingerprint: 05be265c080ab8210fb828ea93eb04981a006828
-dependencies:
-- backup-and-restore-release-golang
