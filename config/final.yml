@@ -1,0 +1,5 @@
+name: bucc-bbr
+blobstore:
+  provider: local
+  options:
+    blobstore_path: final_blobs
