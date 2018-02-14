@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+# unreleased fix upstream: https://github.com/cloudfoundry/bosh/commit/d11e142edf633ebe8dec1febd0304bf5f879647b
+chown -R vcap:vcap /var/vcap/store/blobstore/
+

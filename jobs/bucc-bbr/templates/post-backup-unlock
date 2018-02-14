@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Director restore needs postgres-9.4 to be inplace
+pushd /var/vcap/packages
+rm postgres-9.4
+mv postgres-9.4{back,}
+

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Make sure director backups uses right version of pgdump
+pushd /var/vcap/packages
+mv postgres-9.4{,back}
+ln -s database-backup-restorer-postgres-9.6 postgres-9.4
