@@ -1,0 +1,20 @@
+name: bucc-bbr
+version: "1"
+commit_hash: d0748b4
+uncommitted_changes: false
+jobs:
+- name: bucc-bbr
+  version: 8ddb1f95498ac09a2d69e68c16d3c4c7242943c9
+  fingerprint: 8ddb1f95498ac09a2d69e68c16d3c4c7242943c9
+  sha1: d742194fd6a0885c4e91f17841df3f4dde44aa28
+packages:
+- name: database-backup-restorer-postgres-9.4
+  version: ac70b7d24de97d249ce6df29b24e83f242d68799
+  fingerprint: ac70b7d24de97d249ce6df29b24e83f242d68799
+  sha1: d08e6c4feb7636e2ce4212e7ef36305a88506ef5
+  dependencies: []
+- name: database-backup-restorer-postgres-9.6
+  version: f3a3ed9e92da1a51a6cfc0711c8807c46d20b25b
+  fingerprint: f3a3ed9e92da1a51a6cfc0711c8807c46d20b25b
+  sha1: 4cfc0db7b6d5386d697a8436a5e4b538732728d5
+  dependencies: []
