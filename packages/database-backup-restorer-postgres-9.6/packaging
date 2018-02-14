@@ -2,5 +2,5 @@ set -e
 
 pushd ${BOSH_INSTALL_TARGET} > /dev/null
 for dir in bin include lib share; do
-  ln -s /var/vcap/packages/database-backup-restorer-postgres-9.6/${dir} ${dir}
+  ln -s /var/vcap/packages/postgres-9.6.4/${dir} ${dir}
 done

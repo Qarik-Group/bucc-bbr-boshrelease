@@ -1,0 +1,8 @@
+---
+name: database-backup-restorer-postgres-9.6
+description: |
+  Symlink package which points to 9.6.6 from postgres-release which is colocated in context of bucc
+
+dependencies: []
+
+files: []
