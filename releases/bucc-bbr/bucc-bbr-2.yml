@@ -1,0 +1,47 @@
+name: bucc-bbr
+version: "2"
+commit_hash: 7e1bcbb
+uncommitted_changes: false
+jobs:
+- name: bbr-atcdb
+  version: a56c71b9de8afa65fc773c39845cd6968f98b0aa
+  fingerprint: a56c71b9de8afa65fc773c39845cd6968f98b0aa
+  sha1: 9859a908b594e63f480315048e748d44aa55d6bb
+- name: bbr-uaadb
+  version: 0336fc36beeb7472ecaf52e7703f6ffed265d11f
+  fingerprint: 0336fc36beeb7472ecaf52e7703f6ffed265d11f
+  sha1: 8f084344e2e2a71f47a0142edd281c3bbeb60c79
+- name: bucc-bbr
+  version: e9df5d24110383cebd145286de2732d4b47187b3
+  fingerprint: e9df5d24110383cebd145286de2732d4b47187b3
+  sha1: 8ef0763c0b935e5ac721e0abe4b63be11cf02a27
+- name: bucc-creds
+  version: a2e6ba223f4c555ebd54994c080c4dff5420bee6
+  fingerprint: a2e6ba223f4c555ebd54994c080c4dff5420bee6
+  sha1: 0b4136738c58da1deeae3fc5b139114d4f984021
+- name: database-backup-restorer
+  version: 593940b73486717fc8e933ee0618df31232601c0
+  fingerprint: 593940b73486717fc8e933ee0618df31232601c0
+  sha1: 4fb4d729b9f65529e5e33bf9d1ec66ca6c4babc7
+packages:
+- name: backup-and-restore-release-golang
+  version: 322af40566b61235b46a9c8db756aba7453818a5
+  fingerprint: 322af40566b61235b46a9c8db756aba7453818a5
+  sha1: 440bfddbfeb5b0df9e56746614d1809dab744b31
+  dependencies: []
+- name: database-backup-restorer
+  version: 05be265c080ab8210fb828ea93eb04981a006828
+  fingerprint: 05be265c080ab8210fb828ea93eb04981a006828
+  sha1: 88f08e2308a8cdec177c90ab454cfe0e4e89ecaf
+  dependencies:
+  - backup-and-restore-release-golang
+- name: database-backup-restorer-postgres-9.4
+  version: ac70b7d24de97d249ce6df29b24e83f242d68799
+  fingerprint: ac70b7d24de97d249ce6df29b24e83f242d68799
+  sha1: d08e6c4feb7636e2ce4212e7ef36305a88506ef5
+  dependencies: []
+- name: database-backup-restorer-postgres-9.6
+  version: f3a3ed9e92da1a51a6cfc0711c8807c46d20b25b
+  fingerprint: f3a3ed9e92da1a51a6cfc0711c8807c46d20b25b
+  sha1: 4cfc0db7b6d5386d697a8436a5e4b538732728d5
+  dependencies: []
