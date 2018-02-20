@@ -7,9 +7,6 @@ templates:
   post-backup-unlock: bin/bbr/post-backup-unlock
   post-restore-unlock: bin/bbr/post-restore-unlock
 
-packages:
-# credhub
-- database-backup-restorer-postgres-9.6
-- database-backup-restorer-postgres-9.4
+packages: []
 
 properties: {}
