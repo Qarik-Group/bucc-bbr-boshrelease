@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -eux
+
+cp /var/vcap/jobs/bucc-creds/config/creds.yml $ARTIFACT_DIRECTORY/

@@ -1,0 +1,12 @@
+---
+name: bucc-creds
+
+templates:
+  creds.yml: config/creds.yml
+  backup: bin/bbr/backup
+
+packages: []
+
+properties:
+  creds:
+    description: Creds file body to backup
