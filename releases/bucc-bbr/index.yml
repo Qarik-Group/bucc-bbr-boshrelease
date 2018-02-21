@@ -1,6 +1,8 @@
 builds:
   34f6b918-8bb8-4380-621b-521940805567:
     version: "1"
+  c9a19010-08a8-4fdc-704a-21af919bf100:
+    version: "3"
   edb351cd-4429-49ed-71ab-cd53c5e0a275:
     version: "2"
 format-version: "2"
