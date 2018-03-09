@@ -8,15 +8,4 @@ JOB_PATH="/var/vcap/jobs/bbr-atcdb"
 BBR_ARTIFACT_FILE_PATH="${BBR_ARTIFACT_DIRECTORY}/atcdb-artifact-file"
 CONFIG_PATH="${JOB_PATH}/config/config.json"
 
-# "/var/vcap/jobs/database-backup-restorer/bin/restore" --config "${CONFIG_PATH}" --artifact-file "${BBR_ARTIFACT_FILE_PATH}"
-
-PATH=/var/vcap/packages/postgres-9.6.4/bin:$PATH
-
-# Below code does the same as /var/vcap/jobs/database-backup-restorer/bin/restore
-# but it adds --if-exists, which is needed because the pipeline_build_events_1 table only exists after a pipeline is created
-# so on clean deploy's without data a restore would fail.
-# related upstream issue: https://github.com/cloudfoundry-incubator/backup-and-restore-sdk-release/pull/8
-export PGPASSWORD=<%= p('postgresql.role.password') %>
-cmd="pg_restore --username=<%= p('postgresql.role.name') %> --host=<%= p('postgresql.host') %> --port=<%= p('postgresql.port') %> --dbname <%= p('postgresql.database') %>"
-list=$(${cmd} --list "${BBR_ARTIFACT_FILE_PATH}" | grep -v -E '( EXTENSION | SCHEMA )')
-${cmd} --verbose --format=custom --clean --if-exists --use-list=<(echo -e "${list}") "${BBR_ARTIFACT_FILE_PATH}"
+"/var/vcap/jobs/database-backup-restorer/bin/restore" --config "${CONFIG_PATH}" --artifact-file "${BBR_ARTIFACT_FILE_PATH}"
