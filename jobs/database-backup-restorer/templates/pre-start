@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pushd /var/vcap/packages/ > /dev/null
+
+for package in $(find postgres*\.*); do
+    ln -s ${package} database-backup-restorer-$(echo ${package} | cut -d'.' -f1-2)
+done

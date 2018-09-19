@@ -1,9 +1,0 @@
----
-name: database-backup-restorer-postgres-9.4
-description: |
-  Symlink package which points to 9.6, as a workaround for credhub bbr version check:
-  https://github.com/pivotal-cf/credhub-release/blob/master/jobs/credhub/templates/identify-postgres-server-version.erb#L11
-
-dependencies: []
-
-files: []

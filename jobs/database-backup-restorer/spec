@@ -20,15 +20,10 @@ name: database-backup-restorer
 templates:
   backup: bin/backup
   restore: bin/restore
+  pre-start: bin/pre-start
+
 
 packages:
 - database-backup-restorer
-- database-backup-restorer-postgres-9.6
-- database-backup-restorer-postgres-9.4
-# - database-backup-restorer-mariadb
-# - database-backup-restorer-mysql
-# - database-backup-restorer-mysql-5.5
-# - database-backup-restorer-mysql-5.6
-# - database-backup-restorer-mysql-5.7
 
 properties: {}
