@@ -20,10 +20,7 @@ name: database-backup-restorer
 templates:
   backup: bin/backup
   restore: bin/restore
-  pre-start: bin/pre-start
 
-
-packages:
-- database-backup-restorer
+packages: []
 
 properties: {}
